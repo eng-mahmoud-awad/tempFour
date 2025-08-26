@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="page d-flex h-full">
+      <div class="side-bar p-15 main-shadow  ">
+        <h1 class="logo mb-50" >Mahmoud</h1>
+        <ul class="links">
+            <li class="">
+                <a href="./index.html" class="">
+                    <i class="fa-regular fa-chart-bar fa-fw mr-5"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="./settings.html" class="">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#" class="">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="./projects.html" class="">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="./courses.html" class="">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="./friends.html" class="">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span>Friends</span>
+                </a>
+            </li>
+            <li>
+                <a href="./files.html" class="">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <span>Files</span>
+                </a>
+            </li>
+            <li>
+                <a href="./plans.html" class="">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span>plans</span>
+                </a>
+            </li>
+        </ul>
+      </div>
+
+<div class="content pos-relative " style="background-color: var(--bg-main); flex-grow: 1;">
+        <div class="header pos-relative p-20 w-full d-flex ">
+        <div class="search">
+            <i class="fa-brands fa-searchengin"></i>
+            <input type="text" name="" id="" placeholder="Type a keyword" class="main-border rad-7 p-5 pl-30">
+        </div>
+        <div class="icons d-flex t-lg">
+            <div class="bell">
+                <i class="fa-regular fa-bell fa-lg "></i>
+            </div>
+            <img src="./imgs/avatar.png" alt="">
+        </div>
+      </div>
+      <h1 class="main-title ">
+        Profile
+      </h1>
+      <div class="profile-wrapper">
+        <div class="info-box pl-20 pos-relative box">
+            <div class="av-box">
+                <div class="av-img rad-h">
+                    <img src="./imgs/avatar.png" alt="" class="rad-h">
+                </div>
+                <h2 class="name m-0 t-xl">
+                    Mahmoud Awad
+                </h2>
+                <p class="mt-5 mb-5">Level 20</p>
+                <span class="main-prog mt-5 mb-5">
+                    <span class="sec-prog"></span>
+                </span>
+                <div class="rate mt-5">
+                    <i class="fa-solid fa-star t-sm" style="color: var(--bg-warning);"></i>
+                    <i class="fa-solid fa-star t-sm" style="color: var(--bg-warning);"></i>
+                    <i class="fa-solid fa-star t-sm" style="color: var(--bg-warning);"></i>
+                    <i class="fa-solid fa-star t-sm" style="color: var(--bg-warning);"></i>
+                    <i class="fa-solid fa-star t-sm" style="color: var(--bg-warning);"></i>
+                </div>
+                <p class="m-0 mt-5">500 rating</p>
+            </div>
+            <div class="set-box ">
+                <div class="i-box d-flex p-20 gap-40 w-full">
+                    <div class="left">
+                        <p class="c-grey t-base m-0">General Information</p>
+                    <p class="c-grey t-sm m-0 mt-10">Full name : <span style="color: black;">Mahmoud Awad</span></p>
+                    <p class="c-grey t-sm m-0 mt-10">Country : <span style="color: black;">Egypt</span></p>
+                    </div>
+                    <div class="right">
+                        <p class="c-grey t-sm m-0 mt-10">Gender : <span style="color: black;">Male</span></p>
+                        <label for="toggle-1" class="toggler">
+                <input type="checkbox" class="toggle-checkbox" checked id="toggle-1" >
+                <div class="toggle-switch"></div>
+            </label>
+                    </div>
+                </div>
+                <div class="i-box d-flex p-20 gap-40 w-full">
+                    <div class="left">
+                        <p class="c-grey t-base m-0">Personal Information</p>
+                    <p class="c-grey t-sm m-0 mt-10">Email : <span style="color: black;">o@nn.sa</span></p>
+                    <p class="c-grey t-sm m-0 mt-10">Date Of Birth: <span style="color: black;"> 25/10/1982</span></p>
+                    </div>
+                    <div class="right">
+                        <p class="c-grey t-sm m-0 mt-10">phone : <span style="color: black;">01273900925</span></p>
+                        <label for="toggle-2" class="toggler">
+                <input type="checkbox" class="toggle-checkbox"  id="toggle-2" >
+                <div class="toggle-switch"></div>
+            </label>
+                    </div>
+                </div>
+                <div class="i-box d-flex p-20 gap-40 w-full">
+                    <div class="left">
+                        <p class="c-grey t-base m-0">Job Information</p>
+                    <p class="c-grey t-sm m-0 mt-10">Title : <span style="color: black;">Frontend Developer</span></p>
+                    <p class="c-grey t-sm m-0 mt-10">Years Of Experience : <span style="color: black;">15+</span></p>
+                    </div>
+                    <div class="right">
+                        <p class="c-grey t-sm m-0 mt-10">Programming Language : <span style="color: black;">JS</span></p>
+                        <label for="toggle-3" class="toggler">
+                <input type="checkbox" class="toggle-checkbox" checked id="toggle-3" >
+                <div class="toggle-switch"></div>
+            </label>
+                    </div>
+                </div>
+                <div class="i-box d-flex p-20 gap-40 w-full">
+                    <div class="left">
+                        <p class="c-grey t-base m-0">Billing Information</p>
+                    <p class="c-grey t-sm m-0 mt-10">Payment Method : <span style="color: black;">Paypal</span></p>
+                    <p class="c-grey t-sm m-0 mt-10">Subscription : <span style="color: black;">Monthly</span></p>
+                    </div>
+                    <div class="right">
+                        <p class="c-grey t-sm m-0 mt-10">Email : <span style="color: black;">email@website.com</span></p>
+                        <label for="toggle-4" class="toggler">
+                <input type="checkbox" class="toggle-checkbox"  id="toggle-4" >
+                <div class="toggle-switch"></div>
+            </label>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="down-box d-flex gap-20 box">
+                <div class="skills p-20 bg-white rad-7">
+                    <div class="box-text mb-40">
+                        <h2 class="t-3xl m-0 box-title mb-20">My Skills</h2>
+                        <p>Complete Skills List</p>
+                    </div>
+                    <div class="skill ">
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">HTML</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">PugJs</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">CSS</span>
+                    </div>
+                    <div class="skill">
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Js</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">SASS</span>
+                    </div>
+                    <div class="skill">
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">React</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Angular</span>
+                    </div>
+                    <div class="skill">
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Vue.js</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">php</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">django</span>
+                    </div>
+                    <div class="skill">
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">python</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">java</span>
+                    </div>
+                    <div class="skill">
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Go</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Flutter</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Rust</span>
+                    </div>
+                    <div class="skill">
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Ai</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Excel</span>
+                        <span class="rad-7 t-base  pl-10 pr-10 pt-5 pb-5 mr-5" style="color: black ;">Word</span>
+                    </div>
+            </div>
+            <div class="activities p-20 bg-white rad-7">
+                 <div class="box-text">
+                        <h2 class="t-3xl m-0 box-title mb-20">Latest Activities</h2>
+                        <p>Latest Activities Done By The User</p>
+                    </div>
+                    <div class="act d-flex">
+                        <div class="act-img">
+                            <img src="./imgs/activity-01.png" alt="">
+                        </div>
+                        <div class="act-txt-1">
+                            <p class="t-lg m-0" style="color: black;">Store</p>
+                            <p class="t-lg m-0 c-grey" >Bought The Mastering Python Course</p>
+                        </div>
+                        <div class="act-txt-2">
+                            <p class="t-lg m-0" style="color: black;">18:10</p>
+                            <p class="t-lg m-0 c-grey" >Yesterday</p>
+                        </div>
+                    </div>
+                    <div class="act d-flex">
+                        <div class="act-img">
+                            <img src="./imgs/activity-02.png" alt="">
+                        </div>
+                        <div class="act-txt-1">
+                            <p class="t-lg m-0" style="color: black;">Store</p>
+                            <p class="t-lg m-0 c-grey" >Bought The Mastering Python Course</p>
+                        </div>
+                        <div class="act-txt-2">
+                            <p class="t-lg m-0" style="color: black;">18:10</p>
+                            <p class="t-lg m-0 c-grey" >Yesterday</p>
+                        </div>
+                    </div>
+                    <div class="act d-flex">
+                        <div class="act-img">
+                            <img src="./imgs/activity-03.png" alt="">
+                        </div>
+                        <div class="act-txt-1">
+                            <p class="t-lg m-0" style="color: black;">Store</p>
+                            <p class="t-lg m-0 c-grey" >Bought The Mastering Python Course</p>
+                        </div>
+                        <div class="act-txt-2">
+                            <p class="t-lg m-0" style="color: black;">18:10</p>
+                            <p class="t-lg m-0 c-grey" >Yesterday</p>
+                        </div>
+                    </div>
+                    <div class="act d-flex">
+                        <div class="act-img">
+                            <img src="./imgs/activity-01.png" alt="">
+                        </div>
+                        <div class="act-txt-1">
+                            <p class="t-lg m-0" style="color: black;">Store</p>
+                            <p class="t-lg m-0 c-grey" >Bought The Mastering Python Course</p>
+                        </div>
+                        <div class="act-txt-2">
+                            <p class="t-lg m-0" style="color: black;">18:10</p>
+                            <p class="t-lg m-0 c-grey" >Yesterday</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+      </div>
+
+
+
+
+
+      </div>
+
+      </div>
+    </body>
+    </html>

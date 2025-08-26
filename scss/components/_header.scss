@@ -1,0 +1,65 @@
+@use './abstracts/variables' as * ;
+@use './abstracts/mixins' as * ;
+@use './layout/global-rules' as * ;
+@use './layout/framework' as * ;
+.header {
+    background-color: var(--bg-white);
+    @include shadow(5px  , 1px , 15px , #DDD);
+    justify-content: space-between;
+    align-items: center;
+    .search{
+        input{
+            // all: unset;
+            width: 150px;
+            height: 40px;
+            @include break(mobile){
+                width: 100px;
+            }
+            &:focus{
+                outline: none;
+                width: 200px;
+                 @include break(mobile){
+                width: 150px;
+            }
+            }
+        }
+        
+        position: relative;
+        i{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px;
+            font-size: 18px;
+            color: var(--grey);
+        }
+    //     &::before{
+    //             font-family: var(--fa-style-family-classic);
+    // content: "\f002";
+    // position: absolute;
+    //     }
+    }
+    .icons{
+        // width: 100px;
+        justify-content: space-between;
+        align-items: center;
+        .bell{
+            margin-right: 15px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: var(--bg-danger);
+                right: -5px;
+                top: -5px;
+            }
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

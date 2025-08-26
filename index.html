@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="page d-flex h-full">
+      <div class="side-bar p-15 main-shadow  ">
+        <h1 class="logo mb-50" >Mahmoud</h1>
+        <ul class="links">
+            <li class="active">
+                <a href="#" class="">
+                    <i class="fa-regular fa-chart-bar fa-fw mr-5"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="./settings.html" class="">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="./profile.html" class="">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="./projects.html" class="">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="./courses.html" class="">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="./friends.html" class="">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span>Friends</span>
+                </a>
+            </li>
+            <li>
+                <a href="./files.html" class="">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <span>Files</span>
+                </a>
+            </li>
+            <li>
+                <a href="./plans.html" class="">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span>plans</span>
+                </a>
+            </li>
+        </ul>
+      </div>
+
+
+
+      <div class="content pos-relative " style="background-color: var(--bg-main); flex-grow: 1;">
+        <div class="header pos-relative p-20 w-full d-flex ">
+        <div class="search">
+            <i class="fa-brands fa-searchengin"></i>
+            <input type="text" name="" id="" placeholder="Type a keyword" class="main-border rad-7 p-5 pl-30">
+        </div>
+        <div class="icons d-flex t-lg">
+            <div class="bell">
+                <i class="fa-regular fa-bell fa-lg "></i>
+            </div>
+            <img src="./imgs/avatar.png" alt="">
+        </div>
+      </div>
+
+
+      <h1 class="main-title ">
+        Dashboard
+      </h1>
+      <div class="wrapper w-full p-20">
+        <div class="box pos-relative  ">
+            <div class="box-head d-flex p-20 pos-relative">
+                <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title ">Welcome</h2>
+            <span class="t-lg box-span" style="color: var(--grey);">Mahmoud</span>
+                </div>
+                <div class="img-head ">
+                    <img src="./imgs/welcome.png" alt="">
+                </div>
+                <img src="./imgs/avatar.png" alt="" class="av">
+            </div>
+            <div class="info mt-50 d-flex">
+                <div class="info-box">
+                    <h3 class="m-0 t-lg t-light">Mahmoud Awad</h3>
+                    <span class="t-sm">Developer</span>
+                </div>
+                <div class="info-box">
+                    <h3 class="m-0 t-lg t-light">20</h3>
+                    <span class="t-sm">Projects</span>
+                </div>
+                <div class="info-box">
+                    <h3 class="m-0 t-lg t-light">$0000</h3>
+                    <span class="t-sm">Earned</span>
+                </div>
+            </div>
+            <a href="#">
+                <span class="prof">
+                Profile
+            </span>
+            </a>
+        </div>
+        <div class="box pos-relative p-20">
+            
+                <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title ">Quick Draft</h2>
+            <span class="t-lg box-span" style="color: var(--grey);">Write A Draft For Your Ideas</span>
+                </div>
+                
+                <input type="text" class="w-full" placeholder="title">
+                <textarea name="" placeholder="Your thought" id="" class="w-full" ></textarea>
+            
+                <a href="#">
+                <span class="prof">
+                Save
+            </span>
+            </a>
+        </div>
+
+        <div class="box pos-relative p-20">
+            <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title ">Yearly Targets</h2>
+            <span class="t-lg box-span" style="color: var(--grey);">Targets Of The Year</span>
+                </div>
+                <div class="targets d-flex mt-20">
+                    <div class="target d-flex ">
+                        <div class="icon d-flex flex-c t-2xl mr-15" style="background-color: rgb(0 117 255 / 20%);">
+                    <i class="fa-solid fa-dollar-sign fa-lg " style="color: var(--bg-primary)"></i>
+                </div>
+                <div class="details">
+                    <span class="target-title t-xl" >
+                        Money
+                    </span>
+                    <h4 class="m-0">$20.000</h4>
+                    <div class="bar" style="background-color: rgb(0 117 255 / 20%);">
+                        <div class="mini-bar" style="width: 80%; background-color: var(--bg-primary); border-color: var(--bg-primary);">
+
+                            <span class="perc rad-7 t-sm" style="background-color: var(--bg-primary); ">80%</span>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="target d-flex ">
+                        <div class="icon d-flex flex-c t-2xl mr-15" style="background-color: rgb(245 158 11 / 20%);">
+                    <i class="fa-solid fa-code fa-lg c-orange" style="color: #f59e0b;"></i>
+                </div>
+                <div class="details">
+                    <span class="target-title t-xl" >
+                        Projects
+                    </span>
+                    <h4 class="m-0">20</h4>
+                    <div class="bar" style="background-color: rgb(245 158 11 / 20%);">
+                        <div class="mini-bar" style="width: 55%; background-color: #f59e0b; border-color: #f59e0b;">
+
+                            <span class="perc rad-7 t-sm" style="background-color: #f59e0b; ">55%</span>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="target d-flex ">
+                        <div class="icon d-flex flex-c t-2xl mr-15" style="background-color: rgb(34 197 94 / 20%);">
+                    <i class="fa-solid fa-user fa-lg " style="color: #22c55e;"></i>
+                </div>
+                <div class="details">
+                    <span class="target-title t-xl" >
+                        Team
+                    </span>
+                    <h4 class="m-0">12</h4>
+                    <div class="bar" style="background-color: rgb(34 197 94 / 20%);">
+                        <div class="mini-bar" style="width: 70%; background-color: #22c55e; border-color: #22c55e;">
+
+                            <span class="perc rad-7 t-sm" style="background-color: #22c55e; ">70%</span>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+        </div>
+        <div class="box pos-relative p-20">
+            <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title ">Tickets Statistics</h2>
+            <span class="t-lg box-span" style="color: var(--grey);">Everything About Support Tickets</span>
+            
+        </div>
+        <div class="stics d-flex">
+            <div class="static">
+                <i class="fa-regular fa-rectangle-list fa-2x mb-10" style="color: #f59e0b;" ></i>
+                <h4>2500</h4>
+                <span>Total</span>
+            </div>
+            <div class="static">
+                <i class="fa-solid fa-spinner fa-2x mb-10 " style="color: var(--bg-primary);"></i>
+                <h4>500</h4>
+                <span>Pending</span>
+            </div>
+            <div class="static">
+                <i class="fa-regular fa-circle-check fa-2x mb-10 " style="color: var(--bg-success);"></i>
+                <h4>1900</h4>
+                <span>Closed</span>
+            </div>
+            <div class="static">
+                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 " style="color: var(--bg-danger);"></i>
+                <h4>100</h4>
+                <span>Deleted</span>
+            </div>
+        </div>
+      </div>
+      <div class="box news p-20">
+        <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title ">Latest News</h2>
+        </div>
+        <div class="newsHolder">
+            <div class="new d-flex">
+                <div class="imgNew">
+                    <img src="./imgs/news-01.png"  alt="">
+                </div>
+                <div class="newsText">
+                    <h2>Created SASS Section</h2>
+                    <p>New SASS Examples & Tutorials</p>
+                </div>
+                <span>3 Days Ago</span>
+            </div>
+            <div class="new">
+                <div class="imgNew">
+                    <img src="./imgs/news-02.png" alt="">
+                </div>
+                <div class="newsText">
+                    <h2>Changed The Design</h2>
+                    <p>A Brand New Website Design</p>
+                </div>
+                <span>5 Days Ago</span>
+            </div>
+            <div class="new">
+                <div class="imgNew">
+                    <img src="./imgs/news-03.png" alt="">
+                </div>
+                <div class="newsText">
+                    <h2>Team Increased</h2>
+                    <p>3 Developers Joined The Team</p>
+                </div>
+                <span>6 Days Ago</span>
+            </div>
+            <div class="new">
+                <div class="imgNew">
+                    <img src="./imgs/news-04.png" alt="">
+                </div>
+                <div class="newsText">
+                    <h2>Added Payment Gateway</h2>
+                    <p>Many New Payment Gateways Added</p>
+                </div>
+                <span>2 Days Ago</span>
+            </div>
+        </div>
+      </div>
+      <div class="box tasks p-20">
+        <div class="box-text">
+            <h2 class="t-3xl m-0 box-title">
+                Latest Tasks
+            </h2>
+        </div>
+        <div class="tasks-boxes">
+            <div class="task-box">
+                <div class="task-text">
+                    <h4>Record One New Video</h4>
+                <p>Record Python Create Exe Project</p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+            <div class="task-box">
+                <div class="task-text">
+                    <h4>Write Article</h4>
+                <p>Write Low Level vs High Level Languages</p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+            <div class="task-box">
+                <div class="task-text">
+                    <h4>Finish Project</h4>
+                <p>Publish Academy Programming Project</p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+            <div class="task-box">
+                <div class="task-text">
+                    <h4>Finish Lesson</h4>
+                <p>Finish Teaching Flex Box</p>
+                </div>
+                <i class="fa-regular fa-trash-can delete"></i>
+            </div>
+        </div>
+      </div>
+      <div class="box searchItems p-20">
+        <div class="box-text">
+            <h2 class="t-3xl m-0 box-title mb-20">
+                Top Search Items
+            </h2>
+        </div>
+        <div class="keyword d-flex space-between">
+            <span>Keyword</span>
+            <span>Search Count</span>
+        </div>
+        <div class="itemBox d-flex space-between">
+            <span class="item">
+                Programming
+            </span>
+            <span class="count ">
+                220
+            </span>
+        </div>
+        <div class="itemBox d-flex space-between">
+            <span class="item">
+                Js
+            </span>
+            <span class="count ">
+                50
+            </span>
+        </div>
+        <div class="itemBox d-flex space-between">
+            <span class="item">
+                PHP
+            </span>
+            <span class="count ">
+                70
+            </span>
+        </div>
+        <div class="itemBox d-flex space-between">
+            <span class="item">
+                HTML
+            </span>
+            <span class="count ">
+                300
+            </span>
+        </div>
+        <div class="itemBox d-flex space-between">
+            <span class="item">
+                CSS
+            </span>
+            <span class="count ">
+                220
+            </span>
+        </div>
+        <div class="itemBox d-flex space-between">
+            <span class="item">
+                SCSS
+            </span>
+            <span class="count ">
+                120
+            </span>
+        </div>
+      </div>
+      <div class="box uploads p-20">
+        <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title ">Latest uploads</h2>
+        </div>
+        <div class="newsHolder">
+            <div class="new d-flex">
+                <div class="imgNew">
+                    <img src="./imgs/pdf.svg"  alt="">
+                </div>
+                <div class="newsText">
+                    <h2>my-file.pdf</h2>
+                    <p>Mahmoud</p>
+                </div>
+                <span>2.5mb</span>
+            </div>
+            <div class="new">
+                <div class="imgNew">
+                    <img src="./imgs/avi.svg" alt="">
+                </div>
+                <div class="newsText">
+                    <h2>My-Video-File.avi</h2>
+                    <p>Admin</p>
+                </div>
+                <span>4.9mb</span>
+            </div>
+            <div class="new">
+                <div class="imgNew">
+                    <img src="./imgs/psd.svg" alt="">
+                </div>
+                <div class="newsText">
+                    <h2>My-Psd-File.pdf</h2>
+                    <p>Mahmoud</p>
+                </div>
+                <span>6mb</span>
+            </div>
+            <div class="new">
+                <div class="imgNew">
+                    <img src="./imgs/zip.svg" alt="">
+                </div>
+                <div class="newsText">
+                    <h2>My-Zip-File.pdf</h2>
+                    <p>User</p>
+                </div>
+                <span>8.9mb</span>
+            </div>
+            <div class="new">
+                <div class="imgNew">
+                    <img src="./imgs/dll.svg" alt="">
+                </div>
+                <div class="newsText">
+                    <h2>My-DLL-File.pdf</h2>
+                    <p>User</p>
+                </div>
+                <span>8.9mb</span>
+            </div>
+            <div class="new">
+                <div class="imgNew">
+                    <img src="./imgs/eps.svg" alt="">
+                </div>
+                <div class="newsText">
+                    <h2>My-Eps-File.pdf</h2>
+                    <p>User</p>
+                </div>
+                <span>8.9mb</span>
+            </div>
+        </div>
+      </div>
+      <div class="box prog p-20">
+         <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title ">Last Project Progress</h2>
+        </div>
+        <ul class="steps mt-15 t-lg pl-40">
+            <li class="step done">Got The Project</li>
+            <li class="step done">Started The Project</li>
+            <li class="step done">The Project About To Finish</li>
+            <li class="step current">Test The Project</li>
+            <li class="step">Test The Project</li>
+        </ul>
+        <img src="./imgs/project.png" alt="">
+      </div>
+      <div class="box remind p-20 pos-relative">
+        <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title mb-20">Reminders</h2>
+        </div>
+        <ul class="rems">
+            <li>
+                <div class="circle bg-blue rad-h"></div>
+                <div class="rem-text" style="border-left-color: var(--bg-primary);">
+                    <p>Check My Tasks List</p>
+                    <span>28/09/2022 - 12:00am</span>
+                </div>
+            </li>
+            <li>
+                <div class="circle bg-green rad-h"></div>
+                <div class="rem-text" style="border-left-color: var(--bg-success);">
+                    <p>Check My Tasks List</p>
+                    <span>28/09/2022 - 12:00am</span>
+                </div>
+            </li>
+            <li>
+                <div class="circle bg-orange rad-h" ></div>
+                <div class="rem-text" style="border-left-color: var(--bg-warning);">
+                    <p>Check My Tasks List</p>
+                    <span>28/09/2022 - 12:00am</span>
+                </div>
+            </li>
+            <li>
+                <div class="circle bg-red rad-h"></div>
+                <div class="rem-text" style="border-left-color: var(--bg-danger);">
+                    <p>Check My Tasks List</p>
+                    <span>28/09/2022 - 12:00am</span>
+                </div>
+            </li>
+        </ul>
+      </div>
+      <div class="box post p-20 pos-relative">
+        <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title mb-20">Latest Post</h2>
+        </div>
+        <div class="infoPost d-flex">
+            <img src="./imgs/avatar.png" alt="">
+            <div class="info-text">
+                <h4>Mahmoud Awad</h4>
+                <span>About 3 Hours Ago</span>
+            </div>
+        </div>
+        <p class="post-text">
+             "ابويا قالي زمان "يا عادل يبني  "ابويا قالي زمان "يا عادل يبني  "ابويا قالي زمان "يا عادل يبني  "ابويا قالي زمان "يا عادل يبني  "ابويا قالي زمان "يا عادل يبني "ابويا قالي زمان "يا عادل يبني 
+        </p>
+        <div class="reacts d-flex space-between t-base" style="color: var(--grey);">
+            <span><i class="fa-regular fa-heart"></i> 1.5K</span>
+            <span><i class="fa-regular fa-comments"></i> 200</span>
+        </div>
+      </div>
+      <div class="box media p-20 pos-relative">
+        <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title mb-20">Social Media Stats</h2>
+        </div>
+        <div class="social-wrapper">
+            <div class="social-box twit">
+                <i class="fa-brands fa-twitter fa-2x "></i>
+                <span>10K followers</span>
+                <a href="#">Follow</a>
+            </div>
+            <div class="social-box face">
+                <i class="fa-brands fa-facebook-f fa-2x "></i>
+                <span>10K followers</span>
+                <a href="#">Like</a>
+            </div>
+            <div class="social-box you">
+                <i class="fa-brands fa-youtube fa-2x "></i>
+                <span>10K followers</span>
+                <a href="#">Subscribe</a>
+            </div>
+            <div class="social-box linked">
+                <i class="fa-brands fa-linkedin fa-2x "></i>
+                <span>10K followers</span>
+                <a href="#">Follow</a>
+            </div>
+        </div>
+      </div>
+      <div class="box projects p-20 pos-relative ">
+        <div class="box-text">
+                    <h2 class="t-3xl m-0 box-title mb-20">Projects</h2>
+        </div>
+        <table class="w-full">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Finish Date</th>
+                    <th>Client</th>
+                    <th>Price</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td class="team">
+                        <img src="./imgs/team-01.png" alt="">
+                        <img src="./imgs/team-02.png" alt="">
+                        <img src="./imgs/team-03.png" alt="">
+                        <img src="./imgs/team-04.png" alt="">
+                    </td>
+                    <td class="state pending">
+                        <span>pending</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td class="team">
+                        <img src="./imgs/team-01.png" alt="">
+                        <img src="./imgs/team-02.png" alt="">
+                        <img src="./imgs/team-03.png" alt="">
+                    </td>
+                    <td class="state prog">
+                        <span>in progress</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td class="team">
+                        <img src="./imgs/team-01.png" alt="">
+                        <img src="./imgs/team-05.png" alt="">
+                    </td>
+                    <td class="state complete">
+                        <span>completed</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td class="team">
+                        <img src="./imgs/team-01.png" alt="">
+                        <img src="./imgs/team-05.png" alt="">
+                    </td>
+                    <td class="state complete">
+                        <span>completed</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td class="team">
+                        <img src="./imgs/team-03.png" alt="">
+                        <img src="./imgs/team-05.png" alt="">
+                    </td>
+                    <td class="state rejected">
+                        <span>rejected</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td class="team">
+                        <img src="./imgs/team-01.png" alt="">
+                        <img src="./imgs/team-05.png" alt="">
+                        <img src="./imgs/team-03.png" alt="">
+                        <img src="./imgs/team-02.png" alt="">
+                    </td>
+                    <td class="state complete">
+                        <span>completed</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+@use "./layout/global-rules" as *;
+@use "./layout/framework" as *;
+
+.friends-wrapper{
+    @include columns(250px);
+    gap: 20px;
+    padding: 20px;
+    .friend-box{
+        border-radius: 7px;
+        &.vip{
+            .friend-body{
+                &::after{
+                    position: absolute;
+                    content: "VIP";
+                    font-size: 50px;
+                    color: rgba(204, 110, 47, 0.363);
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-weight: 700;
+                }
+            }
+        }
+        .contact{
+            top: 10px;
+            left: 10px;
+            i{
+                margin-right: 5px;
+                border-radius: 50%;
+                background-color: #eee;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                color: var(--grey);
+                cursor: pointer;
+                &:hover{
+                    background-color: var(--bg-primary);
+                    color: white;
+                }
+            }
+        }
+        .friend-head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 20px;
+            
+            h4{
+                margin:0;
+                margin-top: 10px;
+                margin-bottom: 0px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            p{
+                margin: 0;
+                font-size: 13px;
+                color: var(--grey);
+            }
+            img{
+                width: 100px;
+
+            }
+        }
+        .friend-body{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            .fr{
+                font-size: 14px;
+                &:not(:last-child){
+                    margin-bottom:  10px;
+                }
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .friend-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            > span{
+                font-size: 13px;
+                color: var(--grey);
+            }
+            .buttons{
+                display: flex;
+                span{
+                    border-radius: 7px;
+                    padding: 5px 10px;
+                    color: white;
+                    font-size: 13px;
+                    cursor: pointer;
+                    &.prof{
+                        background-color: var(--bg-primary);
+                        margin-right: 5px;
+                    }
+                    &.remove{
+                        background-color: var(--bg-danger);
+                    }
+                }
+            }
+        }
+    }   
+}

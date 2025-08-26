@@ -1,0 +1,64 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+@use "./layout/global-rules" as *;
+@use "./layout/framework" as *;
+
+.courses-wrapper{
+    @include columns(300px);
+    gap: 20px;
+    padding: 20px;
+    .course-box {
+        overflow: hidden;
+        
+            img.head-img{
+                width: 100%;
+                max-width: 100%;
+            }
+        
+        .abs-img{
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            img{
+                max-width: 100%;
+                border: 2px solid white;
+                // margin-bottom: px;
+            }
+        }
+        .course-main-txt{
+            margin-bottom: 40px;
+            h4{
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 5px;
+                margin-top: 15px;
+            }
+            p{
+                color: var(--grey);
+                margin: 0;
+                max-width: 100%;
+                font-size: 16px;
+            }
+        }
+
+        .course-footer{
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            .footer-title{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -13px;
+                background-color: var(--bg-primary);
+                padding: 5px 10px;
+                border-radius: 7px;
+                font-size: 13px;
+            }
+        }
+    }
+}

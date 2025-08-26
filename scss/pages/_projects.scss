@@ -1,0 +1,127 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+@use "./layout/global-rules" as *;
+@use "./layout/framework" as *;
+
+.projects-wrapper {
+  @include columns(400px);
+  gap: 20px;
+//   width: 100%;
+  @include break(mobile) {
+    grid-template-columns: 1fr;
+    // gap: 10px;
+    // padding: 10px;
+  }
+
+  .project-box {
+    // width: 100%;
+    h4 {
+      font-size: 16px;
+      margin: 0;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      color: var(--grey);
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .project-imgs {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 40px;
+      img {
+        width: 50px;
+        border-radius: 50%;
+        border: 2px solid white;
+        &:not(:first-child) {
+          margin-left: -15px;
+        }
+      }
+    }
+    .uses {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      @include break(mobile){
+// flex-wrap: wrap;
+flex-direction: column;   
+ }
+      span {
+        padding: 5px 10px;
+        border-radius: 7px;
+        background-color: #ddd;
+        margin-right: 5px;
+        font-size: 13px;
+         @include break(mobile){
+
+margin-bottom: 5px;
+ }
+      }
+    }
+    &.red {
+      .inside-bar {
+        background-color: var(--bg-danger);
+      }
+    }
+    &.blue {
+      .inside-bar {
+        background-color: var(--bg-primary);
+      }
+    }
+    &.green {
+      .inside-bar {
+        background-color: var(--bg-success);
+      }
+    }
+    .date{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 13px;
+        color: var(--grey);
+
+    }
+    .project-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+       @include break(mobile){
+
+flex-direction: column;   
+ }
+      .project-bar {
+        // flex-grow: 1;
+         @include break(mobile){
+
+margin-bottom: 10px;   
+ }
+        .prim-bar {
+          width: 200px;
+          background-color: #ddd;
+          height: 6px;
+          border-radius: 10px;
+          display: inline-block;
+          .inside-bar {
+            border-radius: 10px;
+
+            width: 70%;
+            height: 100%;
+            display: block;
+          }
+        }
+      }
+      .price {
+        // flex-grow: 1;
+        font-size: 14px;
+        color: var(--grey);
+      }
+    }
+  }
+}

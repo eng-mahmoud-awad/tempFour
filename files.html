@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Files</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="page d-flex h-full">
+      <div class="side-bar p-15 main-shadow">
+        <h1 class="logo mb-50">Mahmoud</h1>
+        <ul class="links">
+          <li class="">
+            <a href="./index.html" class="">
+              <i class="fa-regular fa-chart-bar fa-fw mr-5"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="./settings.html" class="">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="./profile.html" class="">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="./projects.html" class="">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="./courses.html" class="">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="./friends.html" class="">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#" class="">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="./plans.html" class="">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="content pos-relative"
+        style="background-color: var(--bg-main); flex-grow: 1"
+      >
+        <div class="header pos-relative p-20 w-full d-flex">
+          <div class="search">
+            <i class="fa-brands fa-searchengin"></i>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Type a keyword"
+              class="main-border rad-7 p-5 pl-30"
+            />
+          </div>
+          <div class="icons d-flex t-lg">
+            <div class="bell">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </div>
+            <img src="./imgs/avatar.png" alt="" />
+          </div>
+        </div>
+        <h1 class="main-title">Files</h1>
+        
+       <div class="files-content d-flex ">
+        <div class="statis bg-white  rad-7">
+            <div class="box-text">
+            <h2 class="t-3xl m-0 box-title">
+                Files Statistics
+            </h2>
+        </div>
+        <div class="sts">
+            <i class="fa-regular fa-file-pdf fa-lg blue"></i>
+            <div class="sts-txt">
+                <p class="m-0">Pdf Files</p>
+                <p style="color: var(--grey); " class="m-0">130</p>
+            </div>
+            <span>6.5GB</span>
+        </div>
+        <div class="sts">
+            <i class="fa-regular fa-images fa-lg green "></i>
+            <div class="sts-txt">
+                <p class="m-0">Images</p>
+                <p style="color: var(--grey); " class="m-0">115 files</p>
+            </div>
+            <span>10GB</span>
+        </div>
+        <div class="sts">
+            <i class="fa-regular fa-file-word fa-lg red "></i>
+            <div class="sts-txt">
+                <p class="m-0">Word Files</p>
+                <p style="color: var(--grey); " class="m-0">110 Files</p>
+            </div>
+            <span>4GB</span>
+        </div>
+        <div class="sts">
+            <i class="fa-solid fa-file-csv fa-lg orange "></i>
+            <div class="sts-txt">
+                <p class="m-0">CSV Files</p>
+                <p style="color: var(--grey); " class="m-0">199 Files</p>
+            </div>
+            <span>12.3GB</span>
+        </div>
+        <a href="#" class="upload c-white">
+            <i class="fa-solid fa-angles-up mr-10"></i>
+            Upload
+        </a>
+        </div>
+        <div class="files-wrapper ">
+
+
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/pdf.svg" alt="">
+                    <p>my-file.pdf</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Mahmoud
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">15.6mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/avi.svg" alt="">
+                    <p>my-file.avi</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    coder
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/07/2020</span>
+                    <span class="size">1mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/sql.svg" alt="">
+                    <p>my-file.sql</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    admin
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">14.3mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/dll.svg" alt="">
+                    <p>my-file.dll</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Mohamed
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">8.2mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/eps.svg" alt="">
+                    <p>my-file.eps</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Elsayed
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">3mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/zip.svg" alt="">
+                    <p>my-file.zip</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Khaled
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">2mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/png.svg" alt="">
+                    <p>my-file.png</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Ahmed
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">9.1mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/psd.svg" alt="">
+                    <p>my-file.psd</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Badr
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">11.3mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/avi.svg" alt="">
+                    <p>my-file.avi</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Mostafa
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">6.5mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/txt.svg" alt="">
+                    <p>my-file.txt</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Yahia
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">15.6mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/pdf.svg" alt="">
+                    <p>my-file.pdf</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Mahmoud
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">15.6mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/avi.svg" alt="">
+                    <p>my-file.avi</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    coder
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/07/2020</span>
+                    <span class="size">1mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/sql.svg" alt="">
+                    <p>my-file.sql</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    admin
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">14.3mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/dll.svg" alt="">
+                    <p>my-file.dll</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Mohamed
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">8.2mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/eps.svg" alt="">
+                    <p>my-file.eps</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Elsayed
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">3mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/zip.svg" alt="">
+                    <p>my-file.zip</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Khaled
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">2mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/png.svg" alt="">
+                    <p>my-file.png</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Ahmed
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">9.1mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/psd.svg" alt="">
+                    <p>my-file.psd</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Badr
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">11.3mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/avi.svg" alt="">
+                    <p>my-file.avi</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Mostafa
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">6.5mg</span>
+                </div>
+            </div>
+            <div class="file bg-white p-10 pos-relative">
+                <i class="fa-solid fa-download c-grey pos-absolute"></i>
+                <div class="file-head">
+                    <img src="./imgs/txt.svg" alt="">
+                    <p>my-file.txt</p>
+
+                </div>
+                <span class="uploader-name c-grey t-sm ">
+                    Yahia
+                </span>
+                <div class="file-footer">
+                    <span class="date">20/06/2020</span>
+                    <span class="size">15.6mg</span>
+                </div>
+            </div>
+
+
+        </div>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>

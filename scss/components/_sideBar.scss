@@ -1,0 +1,106 @@
+@use './abstracts/variables' as * ;
+@use './abstracts/mixins' as * ;
+@use './layout/global-rules' as * ;
+@use './layout/framework' as * ;
+*{
+    transition: 0.3s;
+}
+.side-bar {
+    width: 200px ;
+    z-index: 100;
+    // height: 100%;
+     @include break(mobile){
+                width: 60px;
+                padding: 5px;
+            }
+    >h1{
+        position: relative;
+        // color: var(--text-dark);
+        // font-size: 10px;
+        text-align: center;
+        @include break(mobile){
+            font-size: 10px;
+            margin-bottom: 20px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background-color: var(--black);
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            border: 3px solid white;
+            z-index: 1;
+            transition: 0.3s;
+            @include break(mobile){
+                display: none;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: calc(50% + 30px);
+            height: 2px;
+            background-color: var(--black);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            transition: 0.3s;
+             @include break(mobile){
+                display: none;
+            }
+        }
+    }
+
+    ul{
+        li{
+            // margin-left: 20px;
+            width: 100%;
+            
+            padding: 5px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            transition: 0.3s;
+            //  @include break(mobile){
+            //     width: 50px;
+            // }
+            &:hover{
+                background-color: var(--bg-light2);
+            }
+            &.active{
+                background-color: var(--bg-light2);
+            }
+            a{
+                color: var(--black);
+                // font-size: 18px;
+                width: 100%;
+                   display: block;
+                   font-size: 16px;
+                i{
+                    margin-left: 7px;
+                    margin-right: 5px;
+                     @include break(mobile){
+                margin-left: 2px;
+                margin-right: 2px;
+                font-size: 14px;
+                
+                @include centering ;
+                width: 100%;
+                padding: 7px;
+            }
+                }
+                span{
+                     @include break(mobile){
+                display: none;
+            }
+                }
+            }
+        }
+    }
+}

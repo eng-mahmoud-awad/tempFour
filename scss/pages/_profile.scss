@@ -1,0 +1,171 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+@use "./layout/global-rules" as *;
+@use "./layout/framework" as *;
+
+.profile-wrapper{
+    // @include columns(400px);
+    // @include break(mobile){
+    //     grid-template-columns: 1fr;
+    //         }
+    padding: 20px;
+    .box{
+        border-radius: 7px;
+        margin-bottom: 20px;
+        &.info-box{
+        grid-column: 1 / -1;
+        background-color: white;
+            display: flex;
+            align-items: center;
+            @include break(mobile){
+                flex-direction: column;
+                padding-left: 0;
+            }
+        .av-box{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-right: 1px solid #eee;
+            padding: 20px;
+            @include break(mobile){
+                border: none;
+            }
+            .av-img{
+            width: 120px;
+            img{
+                max-width: 100%;
+            }
+        }
+        .name{
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        p{
+            color: var(--grey);
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .main-prog{
+            width: 70%;
+            background-color: #ddd;
+            height: 5px;
+            border-radius: 10px;
+            display: block;
+            .sec-prog{
+                width: 70%;
+                border-radius: 10px;
+                height: 100%;
+                background-color: var(--bg-primary);
+                display: block;
+            }
+        }
+
+        }
+        .set-box{
+            flex-grow: 1;
+             @include break(mobile){
+                width: 100%;
+                // align-items: center;
+                // justify-content: center;
+                
+            }
+            .i-box{
+                &:not(:last-child){
+                    border-bottom: 1px solid #eee;
+                }
+                // flex-basis: 100%;
+                &:hover{
+                    background-color: var(--bg-light);
+                }
+                @include break(mobile){
+                    // width: 100%;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-grow: 1;
+                // margin: 0 auto;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 0px;
+                .right{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                }
+            }
+            // .left{
+            //     margin-right: 40px;
+            // }
+            
+        }
+        }
+    }
+    &.down-box{
+        @include break(mobile){
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+        .skills{
+            flex-grow: 1;
+            @include break(mobile){
+                    width: 100%;
+                }
+            .skill{
+                padding: 20px 0;
+                &:not(:last-child){
+                    border-bottom: 1px solid #eee;
+                }
+                // margin-bottom: 20px;
+                span{
+                    // display: inline-block;
+                    background-color: #eee;
+                }
+            }
+        }
+        .activities{
+            flex-grow: 2;
+            @include break(mobile){
+                    width: 100%;
+
+                }
+            .act{
+                align-items: center;
+                padding: 20px 0;
+                @include break(mobile){
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid #eee;
+                }
+                .act-img{
+                    width: 70px;
+                    margin-right: 15px;
+                    @include break(mobile){
+                    margin: 0 auto;
+                }
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .act-txt-1{
+                    flex-grow: 1;
+                    @include break(mobile){
+                    text-align: center;
+                }
+                }
+                .act-txt-2{
+                    margin-top: 10px;
+                    @include break(mobile){
+                    text-align: center;
+                }
+                }
+            }
+        }
+    }
+    }
+}
