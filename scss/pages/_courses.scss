@@ -5,6 +5,10 @@
 
 .courses-wrapper{
     @include columns(300px);
+    @include break(mobile){
+        @include columns(200px);
+
+    }
     gap: 20px;
     padding: 20px;
     .course-box {
