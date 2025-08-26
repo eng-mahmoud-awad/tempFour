@@ -87,7 +87,7 @@ $spacings: 0, 5, 10, 15, 20, 30, 40, 50;
 
 ## 📸 Screenshot 
 ```
-imgs/Dashboard.png
+![website](images/preview.png)
 ```
 
 ## 🪪 License
